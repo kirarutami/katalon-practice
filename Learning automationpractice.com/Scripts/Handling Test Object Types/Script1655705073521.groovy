@@ -19,17 +19,33 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
+WebUI.maximizeWindow()
+
 WebUI.navigateToUrl('automationpractice.com')
 
-WebUI.click(findTestObject('Home Page/button_Sign in'))
+WebUI.click(findTestObject('Object Repository/Home Page/button_Sign in'))
 
-WebUI.setText(findTestObject('User Account Pages/Login Page/Login Section/input_Email address'), 'sara@testing.com')
+WebUI.setText(findTestObject('Object Repository/User Account Pages/Login Page/Registration Section/input_Email address create'), 
+    'emailadddd@testing.com')
 
-WebUI.setText(findTestObject('User Account Pages/Login Page/Login Section/input_Password'), 'sara123')
+WebUI.delay(5)
 
-WebUI.click(findTestObject('User Account Pages/Login Page/Login Section/button_Sign in'))
+WebUI.click(findTestObject('User Account Pages/Login Page/Registration Section/button_Create an account'))
 
-WebUI.verifyElementVisible(findTestObject('User Account Pages/My Account Page/h1_My account'))
+WebUI.selectOptionByLabel(findTestObject('User Account Pages/Registration Page/Personal Information Section/input_DoB_Day'), 
+    '4  ', false)
+
+WebUI.delay(5)
+
+WebUI.selectOptionByValue(findTestObject('User Account Pages/Registration Page/Personal Information Section/input_DoB_Month'), 
+    '5', false)
+
+WebUI.delay(5)
+
+WebUI.selectOptionByIndex(findTestObject('User Account Pages/Registration Page/Personal Information Section/input_DoB_Year'), 
+    3)
+
+WebUI.delay(3)
 
 WebUI.closeBrowser()
 

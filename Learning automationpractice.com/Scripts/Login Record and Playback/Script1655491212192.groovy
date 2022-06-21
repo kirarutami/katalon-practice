@@ -21,13 +21,13 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://automationpractice.com/index.php')
 
-WebUI.click(findTestObject('Object Repository/Page_My Store/a_Sign in'))
+WebUI.click(findTestObject('Object Repository/Home Page/button_Sign in'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input_Email address_email'), 'sara@testing.com')
+WebUI.setText(findTestObject('Object Repository/User Account Pages/Login Page/Login Section/input_Email address'), 'sara@testing.com')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Login - My Store/input_Password_passwd'), '/6k4BPw6PkQ=')
+WebUI.setEncryptedText(findTestObject('Object Repository/User Account Pages/Login Page/Login Section/input_Password'), '/6k4BPw6PkQ=')
 
-WebUI.click(findTestObject('Object Repository/Page_Login - My Store/span_Sign in'))
+WebUI.click(findTestObject('Object Repository/User Account Pages/Login Page/Login Section/button_Sign in'))
 
 WebUI.closeBrowser()
 

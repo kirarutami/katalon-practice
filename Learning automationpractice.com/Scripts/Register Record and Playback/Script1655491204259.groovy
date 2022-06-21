@@ -21,75 +21,57 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://automationpractice.com/index.php')
 
-WebUI.click(findTestObject('Page_My Store/a_Sign in'))
+WebUI.click(findTestObject('Home Page/button_Sign in'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input_Email address_email_create'), 'sara1@testing.com')
+WebUI.setText(findTestObject('Object Repository/User Account Pages/Login Page/Registration Section/input_Email address create'), 'sara1@testing.com')
 
-WebUI.click(findTestObject('Object Repository/Page_Login - My Store/span_Create an account'))
+WebUI.click(findTestObject('Object Repository/User Account Pages/Login Page/Registration Section/button_Create an account'))
 
-WebUI.click(findTestObject('Object Repository/Page_Login - My Store/input_Mr_id_gender'))
+WebUI.click(findTestObject('Object Repository/User Account Pages/Registration Page/Personal Information Section/radio_Gender_Mr'))
 
-WebUI.click(findTestObject('Object Repository/Page_Login - My Store/label_Mrs'))
+WebUI.setText(findTestObject('Object Repository/User Account Pages/Registration Page/Personal Information Section/input_Customer First Name'), 
+    'Sara')
 
-WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input__customer_firstname'), 'Sara')
+WebUI.setText(findTestObject('Object Repository/User Account Pages/Registration Page/Personal Information Section/input_ Customer Last Name'), 
+    'Sarah')
 
-WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input__customer_lastname'), 'Sarah')
+WebUI.setText(findTestObject('Object Repository/User Account Pages/Registration Page/Personal Information Section/input_Email'), 'sara1@testing.com')
 
-WebUI.click(findTestObject('Object Repository/Page_Login - My Store/input__email'))
+WebUI.setEncryptedText(findTestObject('Object Repository/User Account Pages/Registration Page/Personal Information Section/input_Password'), 
+    '/6k4BPw6PkQ=')
 
-WebUI.click(findTestObject('Object Repository/Page_Login - My Store/form_Your personal informationTitleMr.Mrs.F_0dfd37'))
-
-WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input__email'), 'sara1@testing.com')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Login - My Store/input__passwd'), '/6k4BPw6PkQ=')
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Login - My Store/select_-12345678910111213141516171819202122_51e29d'), 
+WebUI.selectOptionByValue(findTestObject('Object Repository/User Account Pages/Registration Page/Personal Information Section/input_DoB_Day'), 
     '1', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Login - My Store/select_-JanuaryFebruaryMarchAprilMayJuneJul_702766'), 
+WebUI.selectOptionByValue(findTestObject('Object Repository/User Account Pages/Registration Page/Personal Information Section/input_DoB_Month'), 
     '1', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Login - My Store/select_-20222021202020192018201720162015201_66c453'), 
+WebUI.selectOptionByValue(findTestObject('Object Repository/User Account Pages/Registration Page/Personal Information Section/input_DoB_Year'), 
     '1977', true)
 
-WebUI.doubleClick(findTestObject('Object Repository/Page_Login - My Store/label_Sign up for our newsletter'))
+WebUI.setText(findTestObject('Object Repository/User Account Pages/Registration Page/Address Section/input_First Name'), 'Sara')
 
-WebUI.doubleClick(findTestObject('Object Repository/Page_Login - My Store/label_Receive special offers from our partners'))
+WebUI.setText(findTestObject('Object Repository/User Account Pages/Registration Page/Address Section/input_Last Name'), 'Sarah')
 
-WebUI.click(findTestObject('Object Repository/Page_Login - My Store/input__firstname'))
+WebUI.setText(findTestObject('Object Repository/User Account Pages/Registration Page/Address Section/input_Company'), 'AGT')
 
-WebUI.click(findTestObject('Object Repository/Page_Login - My Store/form_Your personal informationTitleMr.Mrs.F_a5232a'))
+WebUI.setText(findTestObject('Object Repository/User Account Pages/Registration Page/Address Section/input_Address Line 1'), 'PO')
 
-WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input__firstname'), 'Sara')
+WebUI.setText(findTestObject('Object Repository/User Account Pages/Registration Page/Address Section/input_Address Line 2'), 'PO')
 
-WebUI.click(findTestObject('null'))
+WebUI.setText(findTestObject('Object Repository/User Account Pages/Registration Page/Address Section/input_City'), 'BGD')
 
-WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input__lastname'), 'Sarah')
+WebUI.selectOptionByValue(findTestObject('Object Repository/User Account Pages/Registration Page/Address Section/select_State'), '1', true)
 
-WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input_Company_company'), 'AGT')
+WebUI.setText(findTestObject('Object Repository/User Account Pages/Registration Page/Address Section/input_Postal Code'), '12312')
 
-WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input__address1'), 'PO')
+WebUI.setText(findTestObject('Object Repository/User Account Pages/Registration Page/Address Section/textarea_Additional Information'), 'A')
 
-WebUI.click(findTestObject('null'))
+WebUI.setText(findTestObject('Object Repository/User Account Pages/Registration Page/Address Section/input_Home Phone'), '1123')
 
-WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input_Address (Line 2)_address2'), 'PO')
+WebUI.setText(findTestObject('Object Repository/User Account Pages/Registration Page/Address Section/input_Mobile Phone'), '123')
 
-WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input__city'), 'BGD')
+WebUI.setText(findTestObject('Object Repository/User Account Pages/Registration Page/Address Section/input_Address Alias'), 'My addressADD')
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Login - My Store/select_-AlabamaAlaskaArizonaArkansasCalifor_c52141'), 
-    '1', true)
-
-WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input__postcode'), '12312')
-
-WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/textarea_Additional information_other'), 'A')
-
-WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input_Home phone_phone'), '1123')
-
-WebUI.click(findTestObject('null'))
-
-WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input__phone_mobile'), '123')
-
-WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input__alias'), 'My addressADD')
-
-WebUI.click(findTestObject('Object Repository/Page_Login - My Store/span_Register'))
+WebUI.click(findTestObject('Object Repository/User Account Pages/Registration Page/button_Register'))
 

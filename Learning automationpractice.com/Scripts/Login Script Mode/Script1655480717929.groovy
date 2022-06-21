@@ -23,15 +23,15 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl('automationpractice.com')
 
-WebUI.click(findTestObject('Object Repository/Page_My Store/a_Sign in'))
+WebUI.click(findTestObject('Object Repository/Home Page/button_Sign in'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input_Email address_email'), 'sara@testing.com')
+WebUI.setText(findTestObject('Object Repository/User Account Pages/Login Page/Login Section/input_Email address'), 'sara@testing.com')
 
-WebUI.setText(findTestObject('Object Repository/Page_Login - My Store/input_Password_passwd'), 'sara123')
+WebUI.setText(findTestObject('Object Repository/User Account Pages/Login Page/Login Section/input_Password'), 'sara123')
 
-WebUI.click(findTestObject('Object Repository/Page_Login - My Store/span_Sign in'))
+WebUI.click(findTestObject('Object Repository/User Account Pages/Login Page/Login Section/button_Sign in'))
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/Page_My Store/a_Sign in'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/Home Page/button_Sign in'))
 
 WebUI.delay(3)
 
